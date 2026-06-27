@@ -27,5 +27,8 @@ export default defineConfig({
       },
     ],
   },
+  staged: {
+    "*.{js,ts,tsx}": "vp check --fix",
+  },
   plugins: lazyPlugins(() => [react()]),
 });
